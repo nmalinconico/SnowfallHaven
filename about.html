@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowfall Haven | About</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="banner">
+        <h1>Welcome to Snowfall Haven</h1>
+        <p>Your Ultimate Ski Destination</p>
+    </header>
+
+    <nav>
+        <div class="nav-toggle" id="nav-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="stay.html">Stay</a></li>
+            <li><a href="play.html">Play</a></li>
+            <li><a href="dine.html">Dine</a></li>
+            <li><a href="support.html">Support</a></li> 
+        </ul>
+    </nav>
+
+    <section class="intro">
+        <h2>About Snowfall Haven</h2>
+        <div class="about-content">
+            <img src="images/mountain.jpg" alt="Snowfall Haven Mountain" class="about-img">
+            <p>
+                Come and see why we are the number one family mountain resort in America! From world-class skiing and snowboarding, 
+                to restaurants curated by famous chefs, Snowfall Haven is your family’s top destination this winter!
+            </p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Sign Up for More Information</h2>
+        <p>Want to stay updated on the latest at Snowfall Haven? Fill out the form below to receive more information!</p>
+        
+        <form action="#" method="POST" id="contact-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Your full name">
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required placeholder="Your age" min="18">
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="Your email address">
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Snowfall Haven Ski Resort</p>
+    </footer>
+
+    <script>
+        const navToggle = document.getElementById("nav-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+        navToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("open");
+        });
+    </script>
+</body>
+</html>
