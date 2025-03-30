@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowfall Haven | Dine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="banner">
+        <h1>Welcome to Snowfall Haven</h1>
+        <p>Your Ultimate Ski Destination</p>
+    </header>
+
+    <nav>
+        <div class="nav-toggle" id="nav-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="stay.html">Stay</a></li>
+            <li><a href="play.html">Play</a></li>
+            <li><a href="dine.html">Dine</a></li>
+            <li><a href="support.html">Support</a></li> 
+        </ul>
+    </nav>
+
+    <section class="intro">
+        <h2>Dine at Snowfall Haven</h2>
+        <div class="dine-content">
+            <div class="dine-img-container">
+                <img src="images/restaurant.jpg" alt="Snowfall Restaurant" class="dine-img">
+                <p>From Prime Steaks to Fresh Seafood, the Snowfall Restaurant Offers Top of the Line Dining. Indulge in exquisite dishes, crafted by world-class chefs, and enjoy an unforgettable culinary experience in the heart of Snowfall Haven.</p>
+            </div>
+            <div class="dine-img-container">
+                <img src="images/quickbite.jpg" alt="Grab-and-Go Station" class="dine-img">
+                <p>Stop by Any of Our Grab-and-Go Stations Before Hitting the Slopes!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Snowfall Haven Ski Resort</p>
+    </footer>
+
+    <script>
+        const navToggle = document.getElementById("nav-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+        navToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("open");
+        });
+    </script>
+</body>
+</html>
