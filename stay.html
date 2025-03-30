@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowfall Haven | Stay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="banner">
+        <h1>Welcome to Snowfall Haven</h1>
+        <p>Your Ultimate Ski Destination</p>
+    </header>
+
+    <nav>
+        <div class="nav-toggle" id="nav-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="stay.html">Stay</a></li>
+            <li><a href="play.html">Play</a></li>
+            <li><a href="dine.html">Dine</a></li>
+            <li><a href="support.html">Support</a></li> 
+        </ul>
+    </nav>
+
+    <section class="intro">
+        <h2>Stay at Snowfall Haven</h2>
+        <div class="stay-content">
+            <img src="images/hotel.jpg" alt="Snowfall Grand Hotel" class="stay-img">
+            <p>
+                The Snowfall Grand Hotel has everything you need: from exquisite suites, to breathtaking views by the pool, to our world-class spa! Whether you are looking to relax or experience adventure, Snowfall Grand offers unparalleled luxury and comfort.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Snowfall Haven Ski Resort</p>
+    </footer>
+
+    <script>
+        const navToggle = document.getElementById("nav-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+        navToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("open");
+        });
+    </script>
+</body>
+</html>
